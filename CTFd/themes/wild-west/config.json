@@ -1,0 +1,7 @@
+{
+  "name": "wild-west",
+  "description": "A Wild West themed CTFd interface with Western aesthetics",
+  "version": "1.0.0",
+  "author": "AGILPRO",
+  "extends": "core"
+}
