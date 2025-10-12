@@ -1,0 +1,103 @@
+/* Wild West Theme for CTFd */
+/* Western-style color palette and typography */
+
+:root {
+  --wild-west-brown: #8B4513;
+  --wild-west-tan: #D2B48C;
+  --wild-west-cream: #F5DEB3;
+  --wild-west-dark: #3E2723;
+  --wild-west-red: #B22222;
+  --wild-west-gold: #FFD700;
+}
+
+body {
+  background: linear-gradient(to bottom, #87CEEB 0%, #D2B48C 50%, #8B7355 100%);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: var(--wild-west-dark);
+}
+
+/* Navbar with Wild West styling */
+.navbar {
+  background: linear-gradient(to bottom, #8B4513, #654321) !important;
+  border-bottom: 3px solid var(--wild-west-gold);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--wild-west-cream) !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-weight: bold;
+}
+
+/* Buttons with wooden texture effect */
+.btn-primary {
+  background: linear-gradient(to bottom, #8B4513, #654321);
+  border: 2px solid var(--wild-west-gold);
+  color: var(--wild-west-cream);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to bottom, #654321, #8B4513);
+  border-color: var(--wild-west-red);
+}
+
+/* Cards with wooden panel look */
+.card {
+  background: linear-gradient(135deg, #D2691E 0%, #8B4513 100%);
+  border: 3px solid var(--wild-west-dark);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+  color: var(--wild-west-cream);
+}
+
+.card-header {
+  background: var(--wild-west-dark);
+  border-bottom: 2px solid var(--wild-west-gold);
+  color: var(--wild-west-gold);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Challenge list with wanted poster style */
+.challenge-button {
+  background: linear-gradient(to bottom, #F5DEB3, #D2B48C);
+  border: 3px solid var(--wild-west-dark);
+  color: var(--wild-west-dark);
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.challenge-button:hover {
+  background: var(--wild-west-gold);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--wild-west-red);
+}
+
+/* Header with saloon sign styling */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--wild-west-dark);
+  text-shadow: 2px 2px 4px var(--wild-west-gold);
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+}
+
+/* Footer with dusty trail effect */
+.footer {
+  background: linear-gradient(to top, #654321, #8B4513);
+  border-top: 3px solid var(--wild-west-gold);
+  color: var(--wild-west-cream);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Add western decorative elements */
+.container::before {
+  content: '🤠';
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  opacity: 0.3;
+  z-index: -1;
+}
