@@ -1,0 +1,12 @@
+{% extends "core/base.html" %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('views.themes', path='wild-west/static/css/wild-west.css') }}">
+{% endblock %}
+
+{% block meta %}
+{{ super() }}
+<meta name="theme-name" content="Wild West">
+<meta name="theme-description" content="A Western-themed CTFd interface">
+{% endblock %}
