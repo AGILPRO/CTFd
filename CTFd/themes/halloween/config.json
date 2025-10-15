@@ -1,5 +1,6 @@
 {
-  "name": "Halloween Theme",
+  "name": "Halloween",
   "author": "CTFd",
-  "description": "A spooky Halloween themed CTFd theme"
+  "description": "A dark, spooky theme for CYBER HAUNT CTF events!",
+  "color": "#ff7518"
 }
