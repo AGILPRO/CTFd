@@ -1,6 +1,7 @@
 /* Halloween Theme CSS */
-
 :root {
+  --dark-bg: #181818;
+  --orange-header: #ff7518;
   --halloween-orange: #ff6600;
   --halloween-black: #1a1a1a;
   --halloween-purple: #663399;
@@ -8,12 +9,28 @@
 }
 
 body {
-  background-color: var(--halloween-black);
+  background-color: var(--dark-bg);
+  background: var(--dark-bg);
   color: var(--halloween-orange);
 }
 
+/* Header styles with orange background */
+header,
+.header,
 .navbar {
-  background-color: var(--halloween-purple);
+  background-color: var(--orange-header);
+  background: var(--orange-header);
+}
+
+/* Cyber Haunt banner with spooky font */
+.banner,
+.cyber-haunt-banner,
+h1.banner,
+.site-title,
+.brand {
+  font-family: 'Creepster', cursive, fantasy, 'Brush Script MT', 'Comic Sans MS', cursive;
+  color: var(--orange-header);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
 }
 
 .btn-primary {
@@ -29,4 +46,5 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: var(--halloween-orange);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: fantasy, cursive, 'Brush Script MT', Georgia, serif;
 }
