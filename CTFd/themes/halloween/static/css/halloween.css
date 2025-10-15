@@ -1,0 +1,32 @@
+/* Halloween Theme CSS */
+
+:root {
+  --halloween-orange: #ff6600;
+  --halloween-black: #1a1a1a;
+  --halloween-purple: #663399;
+  --spooky-green: #00ff00;
+}
+
+body {
+  background-color: var(--halloween-black);
+  color: var(--halloween-orange);
+}
+
+.navbar {
+  background-color: var(--halloween-purple);
+}
+
+.btn-primary {
+  background-color: var(--halloween-orange);
+  border-color: var(--halloween-black);
+}
+
+.card {
+  background-color: #2a2a2a;
+  border: 2px solid var(--halloween-orange);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--halloween-orange);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
