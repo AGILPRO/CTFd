@@ -11,9 +11,44 @@
     <!-- Halloween Theme CSS -->
     <link rel="stylesheet" href="{{ url_for('views.themes', path='static/css/halloween.css') }}">
     
+    <style>
+        body.dark-theme {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        
+        .spooky-banner {
+            background: linear-gradient(135deg, #ff6600 0%, #000000 100%);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #ff6600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        
+        .spooky-banner h2 {
+            margin: 0 0 10px 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        
+        .spooky-banner p {
+            margin: 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+    
     {% block stylesheets %}{% endblock %}
 </head>
-<body>
+<body class="dark-theme">
+    <!-- Spooky Header Banner -->
+    <div class="spooky-banner">
+        <h2>🎃 👻 CYBER HAUNT 💀 🕷️</h2>
+        <p>Enter the shadows of the digital realm in CYBER HAUNT, a Halloween-themed cybersecurity challenge where teams of Grim Reapers hunt for hidden souls—secret flags buried within haunted servers, encrypted files, and cursed code.</p>
+    </div>
+    
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="/">🎃 Halloween CTF</a>
